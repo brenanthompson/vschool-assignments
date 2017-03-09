@@ -1,0 +1,52 @@
+@font-face {
+    font-family: superMario265;
+    src: url(SuperMario256.ttf);
+}
+
+#divOne {
+    background-color: #ffda09;
+    font-family: superMario265;
+    font-size: 3em;
+    color: #eb1f22;
+}
+
+.divTwo {
+    background-color: #eb1f22;
+    padding-top:30px;
+    padding-bottom: 30px;
+    align-content: center;
+}
+
+#luigiImg {
+    height: 35vh;
+	min-height: 250px;
+    
+}
+
+.divThree {
+    color: #eb1f22;
+    text-align: center;
+    padding-top: 20px;
+/*	max-width: 44px;*/
+}
+
+h1 {
+    font-family: superMario265, sans-serif;
+    
+}
+
+#bio {
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+#divFour {
+    background-color: #ffda09;
+}
+
+#shroom {
+    height: 7vh;
+	min-height: 40px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}

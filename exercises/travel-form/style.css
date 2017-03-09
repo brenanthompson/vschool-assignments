@@ -1,0 +1,24 @@
+header{
+	text-align: center;
+	color: #ffffff;
+	font-family: 'Amatic SC', cursive;
+}
+body{
+	background-image: url(anton-repponen-99617.jpg);
+	background-repeat: no-repeat;
+	background-size: 120%;
+	
+	height: 30vh;
+	
+}
+
+.row{
+	font-family: 'Inconsolata', monospace;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column
+}
+
+#whereTo{
+	max-width: 20%;
+}

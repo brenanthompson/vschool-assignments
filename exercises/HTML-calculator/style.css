@@ -1,0 +1,37 @@
+header {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center
+}
+
+.calculator {
+    font-family: 'Play', sans-serif;
+}
+
+#add {
+    background-color: #4F86B5;
+    padding-bottom: 12px;
+    border: 2px, solid, #233B4F;
+}
+
+#subtract {
+    background-color: #5A99CF;
+    padding-bottom: 12px;
+    border: 2px, solid, #233B4F;
+}
+
+#multiply {
+    background-color: #6FBCFF;
+    padding-bottom: 12px;
+    border: 2px, solid, #233B4F;
+}
+
+.total {
+    font-size: 2em;
+    color: floralwhite;
+    margin: 10px, 0, 10px;
+}
+
+a {
+    font-size: 1.5em;
+    color: floralwhite;
+}

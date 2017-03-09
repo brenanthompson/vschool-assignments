@@ -1,0 +1,26 @@
+h1 {
+    color: darkgreen;
+}
+
+#headlines {
+    font-family: "Georgia";
+    text-align: center;
+}
+
+p {
+    line-height: 25px
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#sugj {
+    text-transform: uppercase;
+}
+#visAvis {
+    float: left;
+    margin: 0 20px 7px 0;
+}

@@ -1,0 +1,31 @@
+h1 {
+    text-align:center;
+    font-family: "Pirata One", cursive;
+    border-style: solid;
+    border-color: '36707D';
+    border-width: thick;
+    font-size: 3em;
+    background-color: rgba(60, 123, 138, .3);
+    
+}
+h2 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 1.7em
+}
+p {
+    display: inline-block;
+    width: 30%; 
+    vertical-align: top;
+    background-color:aliceblue;
+    font-family: "Roboto", sans-serif;
+    margin-left: 5px
+}
+#jupiter {
+    width: 30%;
+}
+#jabba {
+    width: 60%;
+}
+#pret {
+    color: green;
+}

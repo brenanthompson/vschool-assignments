@@ -1,0 +1,25 @@
+table {  
+    font-family: 'Raleway', sans-serif;
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+
+td, th {  
+    border: 1px solid #233B4F;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {  
+    background-color: #4F86B5;
+}
+
+header {
+    font-family: 'Josefin Slab', serif;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+.background {
+    background-image: url("http://img09.deviantart.net/3d9c/i/2016/065/4/f/mario_bros__plumbing_and_pest_control__colour__by_wildwing64-d9u5coj.png");
+    padding-top: 30%;
+    height: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+/*    max-height: 30vh;*/
+}
+
+header {
+    background-color: #192033;
+    width: 100%;
+/*    max-height: 30vh;*/
+}
+
+.baddies {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.goomba {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 150%;
+}
+
+bobOmb-img {
+    height: 200px;
+}
+
+.bobOmb {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 150%;
+}
+
+.cheepCheep {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 150%;
+}
+
+.list {
+    list-style-type: none;
+    font-family: 'Play', sans-serif;
+}
+
+.grandTotal {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: red;
+    background-image: url(https://ih1.redbubble.net/image.188770971.9190/flat,800x800,075,f.jpg);
+    
+}

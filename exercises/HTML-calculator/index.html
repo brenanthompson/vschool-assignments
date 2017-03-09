@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Play|Press+Start+2P" rel="stylesheet">
+    <title>Calc U L8r</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calc U L8r</h1>
+    </header>
+    <div class="calculator">
+        <div id="add" class="col-xs-8">
+            <input type="number" id="addOne">
+            <a> + </a>
+            <input type="number" id="addTwo">
+            <button onclick="addInput()">=</button>
+            <a class="total" id="addTotal"></a>
+        </div>
+        <div id="subtract" class="col-xs-8">
+            <input type="number" id="subOne">
+            <a> - </a>
+            <input type="number" id="subTwo">
+            <button onclick="subInput()">=</button>
+            <a class="total" id="subTotal"></a>
+        </div>
+        <div id="multiply" class="col-xs-8">
+            <input type="number" id="timesOne">
+            <a> * </a>
+            <input type="number" id="timesTwo">
+            <button onclick="timesInput()">=</button>
+            <a class="total" id="timesTotal"></a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script src="app.js"></script>

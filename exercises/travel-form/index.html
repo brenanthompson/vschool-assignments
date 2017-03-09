@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Higher for Hire</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Inconsolata|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Higher for Hire</h1>
+		<hr>
+		<h3>Around-the-World Travel</h3>
+	</header>
+	<form id="form">
+		<div class="row">
+			<div id="firstName">
+				First Name:
+				<input type="text" name="firstName">
+			</div>
+			<div id="lastName">
+				Last Name:
+				<input type="text" name="lastName">
+			</div>
+			<div id="age">
+				Age:
+				<input type="number" name="age">
+			</div>
+			<div class="row" id="radio">
+				Gender
+				<input type="radio" name="gender" value="Male" checked>Male
+<!--				<br>-->
+				<input type="radio" name="gender" value="Female">Female
+<!--				<br>-->
+				<input type="radio" name="gender" value="Party Animal">Party Animal
+<!--				<br>-->
+			</div>
+			<div class="row" id="whereTo">
+				Destination:
+				<select name="destination" id="destination">
+					<option value="Alaska">Juneau, Alaska</option>
+					<option value="Patagonia">El Bolson, Argenting</option>
+					<option value="Norway">Lofoten Islands, Norway</option>
+					<option value="Aukland">Aukland, New Zealand</option>
+				</select>
+			</div>
+			<div class="row" id="food">
+				Dietary Restrictions:
+					<span class="check">
+						Vegetarian <input type="checkbox" name="foodstuffs" value="Vegetarian">
+					</span>
+					<span class="check">
+						Kosher <input type="checkbox" name="foodstuffs" value="Kosher">
+					</span>
+					<span class="check">
+						Meat Only <input type="checkbox" name="foodstuffs" value="Meat Only">
+						<input name="foodstuffs" type="hidden" value="None" />
+					</span>
+			</div>
+			<div id="button">
+				<input type="button" name="formButton" value="Next">
+			</div>
+		</div>
+	</form>
+</body>
+</html>
+<script src="app.js"></script>

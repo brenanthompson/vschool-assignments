@@ -1,0 +1,16 @@
+header {
+    text-align: center
+}
+.sidenav {
+    float: left;
+    width: 10%;
+}
+main {
+    display: inline-block;
+    margin: 15px 0 0 0;
+    
+}
+.photos {
+    width: 40%;
+    margin: 5px;
+}

@@ -1,0 +1,74 @@
+/*
+Create a website that contains the following:
+
+A "sticky" horizontal navbar (meaning it is always on the top of the page, even if you scroll down)
+A blog-style feed, where each blog post (which you'll just hard-code in for now) is in the center of the page, and as your scroll down the page it shows older blog posts.
+Each blog post should have a title of some kind
+Each blog post should have the date it was "published"
+Each blog post should have a photo of some kind near the top of the text, and the text should wrap around the photo and have a reasonable margin between the photo and the wrapped text.
+The blog posts' content can just be hard-coded, meaning it'll all just be on a single page and you can just put filler text (lorem ipsum) there if you want.
+*/
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header {
+    position: static;
+    text-align: center;
+    font-family:'Poiret One', cursive;
+    font-size: 3.5vw;
+	margin-top: 50px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav li {
+    float: left
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+.nav li a:hover {
+    background-color: #E56C50;
+}
+
+.postTitle {
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 100px;
+    margin-left:5px;
+}
+
+.postDate {
+    font-family: 'Open Sans', sans-serif;
+    color: #E56C50;
+    margin-top: 0em;
+    margin-left: .5em;
+}
+
+img {
+    display: block;
+    max-width: 50%;
+    margin:;
+    margin-top: 7vw;
+}
+
+.postBody {
+    margin: 3vw;
+}

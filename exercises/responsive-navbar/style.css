@@ -1,0 +1,49 @@
+.container {
+    background-image: url("./img/jacob-ufkes-102139.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.social {
+    height: 40px;
+}
+
+.mobile-view {
+    display: none;
+}
+
+nav.desktop-view ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.mobile-view span {
+    font-size: 30px;
+}
+
+.banner {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+@media (max-width: 875px) {
+    nav.desktop-view {
+        display: none;
+    }
+}
+
+@media (max-width: 875px) {
+    nav.mobile-view {
+        display: block;
+    }
+    .social{
+        float: right;
+        padding-right: 5px;
+    }
+}
