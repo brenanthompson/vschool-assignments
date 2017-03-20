@@ -42,30 +42,30 @@
 //console.log(enemiesArray)
 
 
-//var enemies = ["Ancient Dragon", "Prowler", "Mighty Grunt"]
-//
-//var oneHundredEnemies = [];
-//
-//function Enemy(type, hitPoints, defense) {
-//	this.type = type;
-//	this.hitPoints = hitPoints;
-//	this.defense = defense;
-//}
-//
-//function enemyGenerator() {
-//	for (var i = 0; i < 100; i++) {
-//		this.type = enemies[Math.floor(Math.random() * enemies.length)];
-//		if (type === [0]) {
-//			this.hitPoints = Math.floor(Math.random() * ((100 - 80) + 1) + 80);
-//		} else if (type === [1]) {
-//			this.hitPoints = Math.floor(Math.random() * ((79 - 50) + 1) + 50);
-//		} else {
-//			this.hitPoints = Math.floor(Math.random() * ((49 - 20) + 1) + 20);
-//		}
-//		this.defense = hitPoints * 3;
-//
-//		oneHundredEnemies.push(new Enemy(type, hitPoints, defense));
-//	}
-//	console.log(oneHundredEnemies);
-//}
-//enemyGenerator();
+var enemies = ["Ancient Dragon", "Prowler", "Mighty Grunt"]
+
+var oneHundredEnemies = [];
+
+function Enemy(type, hitPoints, defense) {
+	this.type = type;
+	this.hitPoints = hitPoints;
+	this.defense = defense;
+}
+
+function enemyGenerator() {
+	for (var i = 0; i < 100; i++) {
+		this.type = enemies[Math.floor(Math.random() * enemies.length)];
+		if (type === [0]) {
+			this.hitPoints = Math.floor(Math.random() * ((100 - 80) + 1) + 80);
+		} else if (type === [1]) {
+			this.hitPoints = Math.floor(Math.random() * ((79 - 50) + 1) + 50);
+		} else {
+			this.hitPoints = Math.floor(Math.random() * ((49 - 20) + 1) + 20);
+		}
+		this.defense = hitPoints * 3;
+
+		oneHundredEnemies.push(new Enemy(type, hitPoints, defense));
+	}
+	console.log(oneHundredEnemies);
+}
+enemyGenerator();

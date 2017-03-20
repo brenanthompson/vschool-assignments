@@ -1,0 +1,67 @@
+{
+	"appetizers": [
+		{
+			"name": "Toast",
+			"ingredients": ["Bread", "Butter", "Jam"],
+			"description": "Fire-toasted artisan sourdough spread with house-churned mantequilla. Side of fresh berry compote"
+		},
+		{
+			"name": "Tots",
+			"ingredients": ["Taters", "Precious", "Salt or whatever"],
+			"description": "Gimme some of your tots!"
+		},
+		{
+			"name": "Powdermilk Biscuits",
+			"ingredients": ["Powdered milk", "Flour", "Gumption"],
+			"description": "Heavens they're tasty, and expeditious!"
+		}
+		 ],
+	"cold sandwiches": [
+		{
+			"name": "peanutButter && jelly",
+			"ingredients": ["Peanut butter", "Jelly", "Bread"],
+			"description": "Just like your nanny made 'em."
+		},
+		{
+			"name": "meat && twoVeg",
+			"ingredients": ["Bread", "Roast Beef", "Spinach", "Pickles"],
+			"description": "Good one"
+		}
+	],
+	"hot sandwiches": [
+		{
+			"name": "grilledCheese",
+			"ingredients": ["Squaw Bread", "Medium Cheddar", "Muenster", "Bellavitano"],
+			"description": "Seriously. It's good."
+		},
+		{
+			"name": "rueben",
+			"ingredients": ["Corned Beef", "Swiss Cheese", "Sauerkraut", "Russian Dressing", "Marble Rye"],
+			"description": "As you may have found out on that band trip in high school, the letters in 'our rueben sandwiches' can be rearranged to spell 'boner sandwiches'. Classic."
+		}
+	],
+	"desserts": [
+		{
+			"name": "It's-it",
+			"ingredients": ["Ice cream", "Oatmeal Cookies", "Dark Chocolate"],
+			"description": "'Oh man, I'd punch a wagonload of kittens for an Its-It right now' - Everyone not in the Bay Area"
+		},
+		{
+			"name": "foo.bar",
+			"ingredients": ["Hard work", "So much money", "Ivy-league CS Degree", "I don't know, probably chocolate or something"],
+			"description": "Everyone says it's great, but is it worth it?"
+		}
+	],
+	"drinks": [
+		{
+			"name": "water",
+			"ingredients": ["hydrogen", "hydrogen", "oxygen"],
+			"description": "Miraculous live-giving fluid that your body turns into pee."
+		},
+		{
+			"name": "soda",
+			"ingredients": ["water", "23 magical flavors", "chemical slurry"],
+			"description": "Tastier than teeth"
+		}
+	]
+}

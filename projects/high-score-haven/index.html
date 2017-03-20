@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<title>High Score Haven</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row" id="head">
+			<div class="col-xs-12">
+				<header>
+					<h1> - High Score Haven - </h1>
+				</header>
+			</div>
+		</div>
+		
+		<div class="row" id="form">
+			<div class="col-xs-12 col-md-4">
+				<form>
+					<div>Name: <br>
+						<input type="text" id="name" name="Name">
+					</div>
+					<div>Game: <br>
+						<input type="text" id="game" name="Game">
+					</div>
+					<div>Date Score Was Set: <br>
+						<input type="date" id="date" name="Date">
+					</div>
+					<div>High Score: <br>
+						<input type="text" id="score" name="Score">
+					</div>
+					<div>Include Random Taunt? <br>
+						<input type="radio" id="tauntOne" name="Taunt" value="yes">Hells Yes! <br>
+						<input type="radio" id="tauntTwo" name="Taunt" value="no">No man, I'm too scared.
+					</div>
+					<div>
+						<button type="submit" id="subButton" form="form1" value="Submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<table class="table" id="highScores">
+			<tr id="header">
+				<th>Name</th>
+				<th>Game</th>
+				<th>Date Set</th>
+				<th>High Score</th>
+				<th>Taunt</th>
+			</tr>
+		</table>
+	</div>
+</body>
+<script src="app.js"></script>
+
+</html>
