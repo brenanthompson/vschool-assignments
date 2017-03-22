@@ -1,0 +1,26 @@
+#inputs{
+	margin-top: 10vh;
+	border: solid;
+}
+
+input{
+	margin-top: 20px;
+	border: solid;
+	
+}
+
+.row{
+	height: 100%;
+}
+
+textarea{
+	margin-top: 20px;
+	border: solid;
+}
+
+.btn{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid;
+	background-color: #e6e6e6;
+}
