@@ -1,0 +1,10 @@
+header{
+	background-color: darkgrey;
+}
+.container{
+	min-height: 15vh;
+	padding-top: 3vh;
+}
+.row{
+	text-align: center;
+}

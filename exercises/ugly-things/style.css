@@ -1,0 +1,13 @@
+.container{
+	text-align: center;
+	background-color: #ca8658;
+}
+
+.inputs{
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+.btn{
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}

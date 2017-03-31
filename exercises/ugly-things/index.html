@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='uglyThings'>
+<head>
+	<meta charset="UTF-8">
+	<title>Ugly Things</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller='mainCtrl'>
+
+	<div class="container inputs">
+		<form class='form-inline'>
+			<div class="form-group inputs">
+				<label class="sr-only .col-form-label" for="title">Title</label>
+				<input type="text" class="col-xs-12" placeholder="Title" name="title" id="title" ng-model="ugly.title">
+			</div>
+			<div class="form-group inputs">
+				<label class="sr-only .col-form-label" for="imgUrl">Img Url</label>
+				<input type="text" class="col-xs-12" placeholder="Img URL" name="imgUrl" id="imgUrl" ng-model="ugly.imgUrl">
+			</div>
+			<div class="form-group inputs">
+				<label class="sr-only .col-form-label" for="description">Description</label>
+				<input type="text" class="col-xs-12" placeholder="Description" name="description" id="description" ng-model="ugly.description">
+			</div>
+		</form>
+
+		<div class="row">
+			<button type="submit" class="btn btn-default">Submit</button>
+
+		</div>
+	</div>
+
+<div ng-repeat=
+	
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

@@ -1,62 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Play|Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Mario's Pest Control</title>
-</head>
-<body>
-  <header>
-     <div class="row">
-         <div class="col-xs-12 col-xs-offset-3 background">
-        
-        </div>
-        
-    </div>
-  </header>
-  
-  <div class="baddies">
-     <div class="goomba col-xs-4">
-        <p>Goomba</p>
-         <img src="http://vignette3.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest?cb=20110724131649&path-prefix=en" class="img-responsive center-block" alt="goomba">
-         <div class="list" id="goombaList">
-             <li>Goombas Caught</li>
-             <p id="goombasCaught"> 12 </p>
-             <li>Price</li>
-             <p id="goombaPrice"> 5 Coins</p>
-         </div>
-     </div>
-     <div class="bobOmb col-xs-4">
-         <p>Bob-Omb</p>
-         <img src="http://vignette3.wikia.nocookie.net/nintendo/images/8/86/Bob-omb_(MKWii).png/revision/latest?cb=20120819225302&path-prefix=en" class="img-responsive center-block" alt="bob-omb" height="200px">
-         <div class="list" id="bobList">
-             <li>Bob-ombs Caught</li>
-             <p id="bobsCaught"> 8 </p>
-             <li>Price</li>
-             <p>7 Coins</p>
-         </div>
-     </div>
-     <div class="cheepCheep col-xs-4">
-         <p>Cheep-Cheep</p>
-         <img src="http://vignette3.wikia.nocookie.net/nintendo/images/5/51/Cheep-Cheep_NSMB.jpg/revision/latest?cb=20130914195943&path-prefix=en" class="img-responsive center-block" alt="cheep-cheep" height="200px">
-         <div class="list" id="cheepList">
-             <li>Cheep-cheeeps Caught</li>
-             <p>5</p>
-             <li>Price</li>
-             <p>11 Coins</p>
-         </div>
-     </div>
-      
-  </div>
-  <div class="grandTotal col-xs-6 col-sx-offset-3">
-      Total Price
-  </div>
 
-<!--  <hr>-->
-   
-    
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Play|Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Mario's Pest Control</title>
+</head>
+
+<body>
+	<header>
+		<div class="row">
+			<div class="col-xs-12 col-xs-offset-3 logo">
+			</div>
+
+		</div>
+	</header>
+
+	<div class="row baddies">
+		<div class="goomba col-xs-4">
+			<p>Goomba</p>
+			<img src="http://vignette3.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest?cb=20110724131649&path-prefix=en" class="img-responsive center-block" alt="goomba">
+			<div class="list" id="goombaList">
+				<li>Goombas Caught</li>
+				<p id="goombasCaught"> 12 </p>
+				<li>Price</li>
+				<p id="goombaPrice"> 5 Coins</p>
+			</div>
+		</div>
+		<div class="bobOmb col-xs-4">
+			<p>Bob-Omb</p>
+			<img src="http://vignette3.wikia.nocookie.net/nintendo/images/8/86/Bob-omb_(MKWii).png/revision/latest?cb=20120819225302&path-prefix=en" class="img-responsive center-block" alt="bob-omb" height="200px">
+			<div class="list" id="bobList">
+				<li>Bob-ombs Caught</li>
+				<p id="bobsCaught"> 8 </p>
+				<li>Price</li>
+				<p>7 Coins</p>
+			</div>
+		</div>
+		<div class="cheepCheep col-xs-4">
+			<p>Cheep-Cheep</p>
+			<img src="http://vignette3.wikia.nocookie.net/nintendo/images/5/51/Cheep-Cheep_NSMB.jpg/revision/latest?cb=20130914195943&path-prefix=en" class="img-responsive center-block" alt="cheep-cheep" height="200px">
+			<div class="list" id="cheepList">
+				<li>Cheep-cheeeps Caught</li>
+				<p>5</p>
+				<li>Price</li>
+				<p>11 Coins</p>
+			</div>
+		</div>
+
+	</div>
+	<div class="row grandTotal">
+		<div class="col-xs-12">
+			<button id="totalButton">Total Price</button>
+			<div class="row">
+			<div class="col-xs-10 col-sm-6 col-md-6 col-xs-offset-1 col-sm-offset-3 col-md-offset-3">
+				<div id="output" style="height: 3em">
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="class col-xs-4 col-xs-offset-8 col-md-2 col-md-offset-10">
+			<button id="nightTime">Night Mode</button>
+		</div>
+	</div>
+
+	<!--  <hr>-->
+	<footer>
+		<div class="row">
+			<div class="col-xs-12">
+				- pestcontrol@mario.bros -
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> www.mariopestcontrol.com</a> - 1 Peach's Castle Way, Super Mario World -
+
+			</div>
+
+		</div>
+		<!--			<img src="http://hdwallpaperdaily.com/wp-content/uploads/2014/09/super-mario-bros-level-1-1-dual-screen-wallpaper-700x196.jpg" alt="">-->
+	</footer>
+	<audio id="pipeSound" src="smb_pipe.wav"></audio>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
 </body>
+
 </html>

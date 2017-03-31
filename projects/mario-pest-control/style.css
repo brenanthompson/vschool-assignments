@@ -1,4 +1,4 @@
-.background {
+.logo {
     background-image: url("http://img09.deviantart.net/3d9c/i/2016/065/4/f/mario_bros__plumbing_and_pest_control__colour__by_wildwing64-d9u5coj.png");
     padding-top: 30%;
     height: 0;
@@ -50,8 +50,48 @@ bobOmb-img {
 .grandTotal {
 	display:block;
     font-family: 'Press Start 2P', cursive;
+	font-size: 1.5em;
     text-align: center;
     color: red;
-    background-image: url(https://ih1.redbubble.net/image.188770971.9190/flat,800x800,075,f.jpg);
-    
+    background-image: url(https://ih1.redbubble.net/image.188770971.9190/flat,800x800,075,f.jpg); 
+	background-size:25vw;
+	margin-bottom: 30px;
+}
+
+/*
+#totalButton {
+	transition: all 0.5s ease-in-out;
+	border-width: 5px;
+	border-radius: 4px;
+	background-color: white;
+	margin-top: 1vh;
+}
+
+#totalButton:hover {
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+*/
+
+#output {
+	background-color: white;
+	text-align: center;
+	margin: 1vh;
+	padding-top: 1.4vh;
+}
+
+footer {
+	display: block;
+	font-family: 'Play', sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.darkBackground {
+	background-color: #104a39;
+	background-image: url(http://68.media.tumblr.com/4c3eae457550998ea429d57628193516/tumblr_ndrz8zuYIw1r3smugo1_500.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }

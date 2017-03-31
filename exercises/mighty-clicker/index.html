@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mightyClicker">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="groundCtrl">
+
+<div class="container">
+	<div class="row form-group">
+		<div class="col-xs-6" id='redBtn'>
+			<h1> {{redScore}} </h1>
+			<button type="button" class="btn btn-lg btn-danger" ng-click="redClick();" ng-init="redScore = 100">RED!</button>
+		</div>
+		<div class="col-xs-6" id='blueBtn'>
+			<h1> {{blueScore}} </h1>
+			<button type="button" class="btn btn-lg btn-primary" ng-click="blueClick();" ng-init="blueScore = 100">BLUE!</button>
+		</div>
+	</div>
+</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="app.js"></script>
+<script src="red-service.js"></script>
+<script src="blue-service.js"></script>
+</body>
+</html>

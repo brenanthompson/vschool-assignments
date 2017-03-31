@@ -24,3 +24,29 @@ textarea{
 	border: solid;
 	background-color: #e6e6e6;
 }
+
+#nameBadge{
+	border: solid #606060;
+}
+
+#badgeHead{
+	background-color: #606060;
+	font-size: 20px;
+	color: white;
+	border-radius: 1px;
+	padding: 2px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.output{
+	margin-top: 20px;
+}
+
+#biobox{
+	height: 10vh;
+	border: solid;
+	margin-bottom: 20px;
+}

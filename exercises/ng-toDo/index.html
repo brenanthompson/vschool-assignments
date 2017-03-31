@@ -1,19 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="ngToDo">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Shadows+Into+Light+Two" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body ng-controller="groundCtrl">
 
-<header id="header">
-	<h1>do it</h1>
-</header>
-	
+	<header>
+		<h1 id="header">do it</h1>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 offset-md-3">
+				<form id="toDoForm">
+					<div class="formgroup">
+						<input type="text" class="form-control" placeholder="What do you need to do?" id="toDoItem" ng-model="newList.title"></div>
+					<div class="formgroup">
+						<input class="form-control" placeholder="Add more detail" type="text" id="toDoDescription" ng-model="newList.description">
+					</div>
+					<div class="formgroup">
+						<input class="form-control" placeholder="How much will it cost?" id="toDoPrice" type="number" ng-model="newList.price">
+					</div>
+					<div class="formgroup">
+						<input class="form-control" placeholder="Enter an image URL here!" type="text" ng-model="newList.imgUrl">
+					</div>
+					<div class="formgroup">
+						<button class="btn btn-default col-xs-2 col-xs-offset-5" type="button" ng-click="submit(newList)">Submit</button>
+					</div>
+				</form>
+
+
+				<div class="row" id="newToDo" ng-repeat="something in toDo track by $index">
+					<div class="panel panel-default col-12 col-md-8 offset-md-2" >
+						<div ng-hide="editing = editing">
+							<div class="panel-title title">
+								<h2 ng-class="{finished: checked}">
+								<input type="checkbox" ng-model="checked"> 
+									{{something.title}}
+								</h2>
+
+							</div>
+							<div class="panel-body description">Description: {{something.description}} </div>
+							<div class="panel-body price">Price: ${{something.price}} </div>
+							<div class="panel-body "><img class="listImg" ng-src="{{something.imgUrl}}"></div>
+							<button class="btn btn-default col-xs-2 col-xs-offset-5" type="button" ng-click="editing = !editing">Edit</button>
+							<button class="btn btn-default col-xs-2 col-xs-offset-5" ng-click="deleteMe($index, something._id)">Delete Item</button>
+						
+						</div>
+						<div ng-show="editing = editing">
+							<form id="editForm">
+								<div class="formgroup">
+									<input type="text" class="form-control" placeholder="What do you need to do?" id="toDoItem" ng-model="something.title"></div>
+								<div class="formgroup">
+									<input class="form-control" placeholder="Add more detail" type="text" id="toDoDescription" ng-model="something.description">
+								</div>
+								<div class="formgroup">
+									<input class="form-control" placeholder="How much will it cost?" id="toDoPrice" type="number" ng-model="something.price">
+								</div>
+								<div class="formgroup">
+									<input class="form-control" placeholder="Enter an image URL here!" type="text" ng-model="something.imgUrl">
+								</div>
+								<div class="formgroup">
+									<button class="btn btn-default col-xs-2 col-xs-offset-5" type="button" ng-click="save(something); editing = !editing">Save</button>
+
+								</div>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
 	<script src="app.js"></script>
+	<script src="services.js"></script>
 </body>
+
 </html>
