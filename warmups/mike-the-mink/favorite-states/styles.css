@@ -1,0 +1,68 @@
+header{
+	display: flex;
+	background-image: 
+		linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+		url(http://static.panoramio.com/photos/large/72732072.jpg);
+	width: 100%;
+	min-height: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	align-items: center;
+/*	background-color: rgba (0, 0, 0, 0.2);*/
+}
+
+h1{
+	font-size: 5em;
+	text-align: center;
+	margin-left: 10px;
+	font-family: 'Averia Serif Libre', cursive;
+}
+
+nav{
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 
+				0 25px 50px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
+.pageTitle{
+	text-align: center;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 5em;
+}
+
+.content{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2em;
+	z-index: 2;
+	height: 650px;
+	width: 80%;
+	background-color: white;
+}
+
+.image{
+	height: 650px;
+	width: 100%;
+	z-index: 1;
+}
+
+#imgOne{
+	background: contain;
+	background-image: url(https://az616578.vo.msecnd.net/files/responsive/cover/main/desktop/2016/06/11/636012645799075880-890638743_slc.jpg);
+	position: fixed;
+}
+
+#imgTwo{
+	background-image: url(https://canyoneering.files.wordpress.com/2009/05/pinecreek6.jpg);
+	background: contain;
+	position: fixed;
+}
+
+#contentOne{
+	position: relative;
+}
+
+#contentTwo{
+	position: relative;
+}
