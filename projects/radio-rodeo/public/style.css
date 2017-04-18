@@ -1,0 +1,100 @@
+header {
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	 -webkit-backface-visibility: hidden;  Chrome, Safari, Opera 
+    backface-visibility: hidden;
+	background-size: cover;
+	background-position: 50% 15%;
+}
+
+.navbar {
+	background-color: rgba(255, 255, 255, .7);
+	-webkit-box-shadow: 0px 0px 20px rgba(44, 44, 44, .3);
+	border: none;
+	/*	margin-top: 93vh;*/
+	text-align: center;
+	
+}
+
+.navbar-header {
+	text-align: center;
+}
+
+.navbar,
+.main {
+	position: relative;
+	z-index: 100;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 100vh;
+}
+
+.companyName {
+	font-family: 'Josefin Slab', sans-serif;
+	font-weight: 300;
+	font-size: 2.7em;
+	color: #5c1b1c;
+	position: fixed;
+}
+
+.companyName:hover {
+	text-decoration: none;
+	color: red;
+}
+
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  top: 85%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #5c1b1c solid;
+  border-bottom: 2px #5c1b1c solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #5c1b1c solid;
+  border-bottom: 1px #5c1b1c solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
+.content {
+	background: white;
+	z-index: 10;
+	position: relative;
+	padding: 3em;
+}
+

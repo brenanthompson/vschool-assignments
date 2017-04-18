@@ -1,0 +1,28 @@
+body{
+	background: url('aneta-ivanova-776.jpg');
+	background-size: cover;
+	background-position: 20% 50%;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+header h1{
+	font-family: 'Josefin Slab', serif;
+	font-size: 4em;
+	color: #ffffff;
+	text-align: center;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	grid-template-rows:10% 20fr auto 20fr;
+	grid-template-areas: 
+		"header header header"
+		"sidebar main main sidebar"
+		"sidebar main main sidebar"
+		"footer footer footer footer"
+		
+}

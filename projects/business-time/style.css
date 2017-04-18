@@ -10,7 +10,7 @@
 	text-align: center;
 }
 
-.navbar .navbar-collapse {
+.navbar-collapse {
   text-align: center;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .image {
-    height: 70vh;
+    height: 1000vh;
     width: 100%;
     z-index: 1;
     }
