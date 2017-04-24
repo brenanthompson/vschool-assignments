@@ -4,7 +4,7 @@ var app = angular.module("ngToDo")
 	
 	this.getList = function(input){
 //		var toDo = {};
-		return $http.get('http://api.vschool.io/brenanthompson/todo/')
+		return $http.get('https://api.vschool.io/brenanthompson/todo/')
 			.then(function(response){
 			
 			return response.data
@@ -15,14 +15,14 @@ var app = angular.module("ngToDo")
 	
 	this.submit = function (input) {
 		console.log(input)
-		return $http.post('http://api.vschool.io/brenanthompson/todo/',input).then(function(response){
+		return $http.post('https://api.vschool.io/brenanthompson/todo/',input).then(function(response){
 			return response.data
 		})
 			
 	};
 	
 	this.deleteMe = function(id){
-		return $http.delete('http://api.vschool.io/brenanthompson/todo/' + id)
+		return $http.delete('https://api.vschool.io/brenanthompson/todo/' + id)
 		.then(function(response){
 			return "You've deleted " + id
 		})
@@ -31,7 +31,7 @@ var app = angular.module("ngToDo")
 	
 	this.save = function(item){
 		
-		return $http.put('http://api.vschool.io/brenanthompson/todo/' + item._id, item);
+		return $http.put('https://api.vschool.io/brenanthompson/todo/' + item._id, item);
 		
 	}
 	

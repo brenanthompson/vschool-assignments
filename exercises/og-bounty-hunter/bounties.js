@@ -5,7 +5,7 @@ var uuid = require("uuid/v4");
 
 var bountyRouter = express.Router();
 
-bountyRouter.route("/")
+bountyRouter.rouste("/")
 
 	//.use(bodyParser.json())
 

@@ -9,11 +9,13 @@ app.controller("bounties", function ($scope, httpService) {
 	})
 })
 
-app.service("httpService", function ($http) {
+app.service("httpService", function ($htt
+	p) {
 
 	this.getBounties = function () {
 		return $http.get("/bounties").then(function (response) {
 			return response.data;
+			
 		})
 	}
 })
