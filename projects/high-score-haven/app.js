@@ -8,7 +8,6 @@ $('#subButton').click(function () {
 	var game = $('#game').val();
 	var date = $('#date').val();
 	var score = $('#score').val();
-	var taunts;
 	
 	if ($('#tauntOne').prop('checked')) {
 		var i = randomMath(4, 0);
